@@ -10,13 +10,13 @@ export const {
   TOGGLE_TEXT,
   TOGGLE_TEXT_REQUESTED,
   setPageState,
-  setPageStateAsinc,
+  setPageStateAsync,
   toggleBorder,
-  toggleBorderAsinc,
+  toggleBorderAsync,
   toggleBackground,
-  toggleBackgroundAsinc,
+  toggleBackgroundAsync,
   toggleText,
-  toggleTextAsinc } = commonActions('page_1')
+  toggleTextAsync } = commonActions('page_1')
 
 
 

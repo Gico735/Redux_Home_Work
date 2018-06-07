@@ -23,11 +23,11 @@ const Page1 = ({ pageState, actions }) => {
       <div className='content' >
         <div className='btn-wrapper'>
           <Btn text={'border'} dataAction={'toggleBorder'} />
-          <Btn text={'borderAsinc'} dataAction={'toggleBorderAsinc'} />
+          <Btn text={'borderAsync'} dataAction={'toggleBorderAsync'} />
           <Btn text={'background'} dataAction={'toggleBackground'} />
-          <Btn text={'backgroundAsinc'} dataAction={'toggleBackgroundAsinc'} />
+          <Btn text={'backgroundAsync'} dataAction={'toggleBackgroundAsync'} />
           <Btn text={'text'} dataAction={'toggleText'} />
-          <Btn text={'textAsinc'} dataAction={'toggleTextAsinc'} />
+          <Btn text={'textAsync'} dataAction={'toggleTextAsync'} />
         </div>
         <Block text={'Gregor'} className={`${pageState.border && 'border'} ${pageState.background && 'background'} ${pageState.text && 'text'}`} />
       </div>

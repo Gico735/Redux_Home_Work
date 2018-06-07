@@ -22,7 +22,7 @@ const commonActions = (pageName) => {
     }
   }
 
-  const setPageStateAsinc = (num) => {
+  const setPageStateAsync = (num) => {
     return dispatch => {
       dispatch({
         type: SET_STATE_REQUESTED,
@@ -47,7 +47,7 @@ const commonActions = (pageName) => {
     }
   }
 
-  const toggleBorderAsinc = () => {
+  const toggleBorderAsync = () => {
     return dispatch => {
       dispatch({
         type: TOGGLE_BORDER_REQUESTED
@@ -70,7 +70,7 @@ const commonActions = (pageName) => {
     }
   }
 
-  const toggleBackgroundAsinc = () => {
+  const toggleBackgroundAsync = () => {
     return dispatch => {
       dispatch({
         type: TOGGLE_BACKGROUND_REQUESTED
@@ -92,7 +92,7 @@ const commonActions = (pageName) => {
     }
   }
 
-  const toggleTextAsinc = () => {
+  const toggleTextAsync = () => {
     return dispatch => {
       dispatch({
         type: TOGGLE_TEXT_REQUESTED
@@ -116,13 +116,13 @@ const commonActions = (pageName) => {
     TOGGLE_TEXT,
     TOGGLE_TEXT_REQUESTED,
     setPageState,
-    setPageStateAsinc,
+    setPageStateAsync,
     toggleBorder,
-    toggleBorderAsinc,
+    toggleBorderAsync,
     toggleBackground,
-    toggleBackgroundAsinc,
+    toggleBackgroundAsync,
     toggleText,
-    toggleTextAsinc
+    toggleTextAsync
   }
 }
 export default commonActions
