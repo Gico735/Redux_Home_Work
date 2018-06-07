@@ -1,7 +1,7 @@
-import Page_1 from './Page_1/Page_1.js'
-import Page_2 from './Page_2/Page_2.js'
+import Page1 from './Page1/Page1'
+import Page2 from './Page2/Page2'
 
 export {
-    Page_1,
-    Page_2
+    Page1,
+    Page2
 }

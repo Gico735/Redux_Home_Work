@@ -6,50 +6,13 @@
   position: relative;
   margin: 20px auto 0px;
   font-size: 50px;
-  color: indianred;
+  color: rgb(64, 11, 150);
 }
 
 a{
   margin-right: 20px;
 }
 
-.block{
-  position: relative;
-  margin: 100px auto 50px;
-  border: dashed rgb(0, 191, 255) 1px;
-  background: white;
-  width: 400px;
-  height: 400px;
-  font-size: 60px;
-  line-height: 400px;
-  color: indianred;
-}
 
-span{
-  display: none;
-}
-
-.border{
-  border: solid pink 3px;
-}
-
-.background{
-  background: lightblue;
-}
-
-.text span{
-  display: block;
-}
-
-.btn-wrapper{
-  position: relative;
-  margin: 50px auto;
-  display: flex;
-  width: 400px;
-  height: 40px;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
 
 

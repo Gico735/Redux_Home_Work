@@ -16,11 +16,6 @@ const commonActions = (pageName) => {
   const setPageState = (num) => {
     return dispatch => {
       dispatch({
-        type: SET_STATE_REQUESTED,
-        payloud: num
-      })
-
-      dispatch({
         type: SET_STATE,
         payloud: num
       })
@@ -39,17 +34,13 @@ const commonActions = (pageName) => {
           type: SET_STATE,
           payloud: num
         })
-      }, 3000)
+      }, 1500)
     }
   }
 
   //////////////////////////////////////
   const toggleBorder = () => {
     return dispatch => {
-      dispatch({
-        type: TOGGLE_BORDER_REQUESTED
-      })
-
       dispatch({
         type: TOGGLE_BORDER
       })
@@ -66,17 +57,13 @@ const commonActions = (pageName) => {
         dispatch({
           type: TOGGLE_BORDER
         })
-      }, 3000)
+      }, 1500)
     }
   }
 
   ///////////////////////////////
   const toggleBackground = () => {
     return dispatch => {
-      dispatch({
-        type: TOGGLE_BACKGROUND_REQUESTED
-      })
-
       dispatch({
         type: TOGGLE_BACKGROUND
       })
@@ -93,16 +80,12 @@ const commonActions = (pageName) => {
         dispatch({
           type: TOGGLE_BACKGROUND
         })
-      }, 3000)
+      }, 1500)
     }
   }
 
   const toggleText = () => {
     return dispatch => {
-      dispatch({
-        type: TOGGLE_TEXT_REQUESTED
-      })
-
       dispatch({
         type: TOGGLE_TEXT
       })
@@ -119,15 +102,19 @@ const commonActions = (pageName) => {
         dispatch({
           type: TOGGLE_TEXT
         })
-      }, 3000)
+      }, 1500)
     }
   }
 
   return {
     SET_STATE,
+    SET_STATE_REQUESTED,
     TOGGLE_BORDER,
+    TOGGLE_BORDER_REQUESTED,
     TOGGLE_BACKGROUND,
+    TOGGLE_BACKGROUND_REQUESTED,
     TOGGLE_TEXT,
+    TOGGLE_TEXT_REQUESTED,
     setPageState,
     setPageStateAsinc,
     toggleBorder,

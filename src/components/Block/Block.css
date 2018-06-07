@@ -1,0 +1,28 @@
+.block{
+  position: relative;
+  margin: 100px auto 50px;
+  border: dashed rgb(76, 0, 255) 1px;
+  background: white;
+  width: 400px;
+  height: 400px;
+  font-size: 60px;
+  line-height: 400px;
+  color: indianred;
+}
+
+span{
+  display: none;
+}
+
+.border{
+  border: solid pink 3px;
+}
+
+.background{
+  background: rgb(69, 14, 221);
+}
+
+.text span{
+  display: block;
+}
+

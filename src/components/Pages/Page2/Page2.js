@@ -1,7 +1,7 @@
 import React from 'react'
-import './Page_2.css'
+import './Page2.css'
 
-const Page_2 = () => (
+const Page2 = () => (
   <div className='Page Page_2'>
 
     <div className='title'>
@@ -12,4 +12,4 @@ const Page_2 = () => (
   </div>
 )
 
-export default Page_2
+export default Page2

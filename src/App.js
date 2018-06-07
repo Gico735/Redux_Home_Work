@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom'
-import { Page_1, Page_2 } from './components/Pages';
+import { Page1, Page2 } from './components/Pages';
 import './App.css';
 
 const App = () => (
@@ -8,13 +8,13 @@ const App = () => (
   <div className='App'>
 
     <div className='header'>
-      <Link  to='/' ></Link>
-      <Link  to='/page_2' ></Link>
+      <Link  to='/' >Page1</Link>
+      <Link  to='/page_2' >Page2</Link>
     </div>
 
     <div className='main'>
-      <Route exact path='/' component={Page_1}></Route>
-      <Route exact path='/page_2' component={Page_2}></Route>
+      <Route exact path='/' component={Page1}></Route>
+      <Route exact path='/page_2' component={Page2}></Route>
     </div>
 
   </div>
