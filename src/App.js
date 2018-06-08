@@ -14,7 +14,7 @@ const App = () => (
 
     <div className='main'>
       <Route exact path='/' component={Page1}></Route>
-      <Route exact path='/page_2' component={Page2}></Route>
+      <Route path='/page_2' component={Page2}></Route>
     </div>
 
   </div>

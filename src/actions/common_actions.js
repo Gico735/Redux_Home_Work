@@ -34,7 +34,7 @@ const commonActions = (pageName) => {
           type: SET_STATE,
           payloud: num
         })
-      }, 1500)
+      }, 2000)
     }
   }
 
@@ -57,7 +57,7 @@ const commonActions = (pageName) => {
         dispatch({
           type: TOGGLE_BORDER
         })
-      }, 1500)
+      }, 2000)
     }
   }
 
@@ -80,7 +80,7 @@ const commonActions = (pageName) => {
         dispatch({
           type: TOGGLE_BACKGROUND
         })
-      }, 1500)
+      }, 2000)
     }
   }
 
@@ -102,7 +102,7 @@ const commonActions = (pageName) => {
         dispatch({
           type: TOGGLE_TEXT
         })
-      }, 1500)
+      }, 2000)
     }
   }
 
