@@ -15,7 +15,7 @@ const Page1 = ({ pageState, actions }) => {
     if (e.target.dataset.action) {
       actions[e.target.dataset.action]()
     }
-    console.log(history)
+    // console.log(actions.payload)
   }
 
   return (
@@ -30,7 +30,7 @@ const Page1 = ({ pageState, actions }) => {
           <Btn text={'text'} dataAction={'toggleText'} />
           <Btn text={'textAsync'} dataAction={'toggleTextAsync'} />
         </div>
-        <Block text={'Gregory'} className={`${pageState.border && 'border'} ${pageState.background && 'background'} ${pageState.text && 'text'}`} />
+        <Block text={pageState.newText} className={`${pageState.border && 'border'} ${pageState.background && 'background'} ${pageState.text && 'text'}`} />
       </div>
     </div>
   );

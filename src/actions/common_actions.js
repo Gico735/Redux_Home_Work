@@ -9,6 +9,7 @@ const commonActions = (pageName) => {
   const TOGGLE_BACKGROUND_REQUESTED = pageName + ':TOGGLE_BACKGROUND';
   const TOGGLE_TEXT = pageName + ':TOGGLE_TEXT';
   const TOGGLE_TEXT_REQUESTED = pageName + ':TOGGLE_TEXT';
+  const SET_NEW_TEXT = pageName + ':NEW_TEXT'
 
 
 
@@ -47,19 +48,29 @@ const commonActions = (pageName) => {
     }
   }
 
+
+
   const toggleBorderAsync = () => {
     return dispatch => {
       dispatch({
         type: TOGGLE_BORDER_REQUESTED
       })
 
-      return setTimeout(() => {
-        dispatch({
-          type: TOGGLE_BORDER
+      
+
+      fetch(`https://www.cbr-xml-daily.ru/daily_json.js`,{cache:'default'}).then((response) => {
+        response.json().then((data) => {
+          let key = Object.keys(data.Valute)[10]
+          console.log(key)
+          dispatch({
+            type: SET_NEW_TEXT,
+            payload: data.Valute[key].Name
+          });
         })
-      }, 2000)
+      });
     }
   }
+
 
   ///////////////////////////////
   const toggleBackground = () => {
@@ -109,6 +120,7 @@ const commonActions = (pageName) => {
   return {
     SET_STATE,
     SET_STATE_REQUESTED,
+    SET_NEW_TEXT,
     TOGGLE_BORDER,
     TOGGLE_BORDER_REQUESTED,
     TOGGLE_BACKGROUND,

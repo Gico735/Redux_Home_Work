@@ -16,7 +16,8 @@ export const {
   toggleBackground,
   toggleBackgroundAsync,
   toggleText,
-  toggleTextAsync } = commonActions('page_1')
+  toggleTextAsync,
+  SET_NEW_TEXT } = commonActions('page_1')
 
 
 
